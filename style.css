@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid rgb(221, 218, 218);
+  position: relative;
+  width: 300px;
+  margin: 20px;
+}
+
+.backgroundPad {
+  display: flex;
+  flex-direction: column;
+  gap: 59px 0;
+}
+
+.backGroundLineContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.backGroundTime {
+  position: absolute;
+  color: gray;
+  font-weight: 600;
+  background-color: white;
+  width: 20%;
+  text-align: center;
+}
+
+.backGroundLineSegment {
+  flex-grow: 1;
+  height: 1px;
+  border-bottom: 1px solid rgb(221, 218, 218);
+}
+
+.eventsContainer {
+  border: 1px solid red;
+  position: absolute;
+  height: 100%;
+  width: -webkit-fill-available;
+  top: 0px;
+  left: 20%;
+}
+
+.eventsContainer p {
+  position: absolute;
+}
