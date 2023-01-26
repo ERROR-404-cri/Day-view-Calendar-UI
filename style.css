@@ -6,8 +6,9 @@
 
 .container {
   border: 1px solid rgb(221, 218, 218);
+  border-radius: 5px;
   position: relative;
-  width: 300px;
+  width: 90%;
   margin: 20px;
 }
 
@@ -26,9 +27,10 @@
 .backGroundTime {
   position: absolute;
   color: gray;
+  font-size: 14px;
   font-weight: 600;
   background-color: white;
-  width: 20%;
+  width: 15%;
   text-align: center;
 }
 
@@ -38,15 +40,32 @@
   border-bottom: 1px solid rgb(221, 218, 218);
 }
 
-.eventsContainer {
-  border: 1px solid red;
+.eventDayContainer {
+  display: flex;
   position: absolute;
-  height: 100%;
-  width: -webkit-fill-available;
   top: 0px;
-  left: 20%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 
-.eventsContainer p {
+.eventsContainer {
+  position: relative;
+  border-right: 1px solid darkgrey;
+  height: 100%;
+  /* width: calc(80% / 7); */
+  top: 0px;
+  left: 20%;
+  overflow: hidden;
+}
+
+.singleEvent {
   position: absolute;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
 }
